@@ -78,7 +78,7 @@
 </style>
 
 <div class="todo" >
-    <form action="/todos "method=post>
+    <form action="/todos.json" method="post">
       <input type="hidden" name="done" value="" />
       <button aria-label="" class="toggle"></button>
     </form>

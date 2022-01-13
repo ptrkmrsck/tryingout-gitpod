@@ -12,13 +12,15 @@ export const get: RequestHandler = () => {
 
 export const post: RequestHandler<unknown, FormData> = (request) => {
     todos.push({
-        text: request.body.get('text'),
+        text: request.body.get("text"),
         created_at: new Date,
         done: false
     });
     
     return {
         status: 303,
-        headers: {location: "/"}
+        headers: {
+            location: "/"
+        }
     }
 }
